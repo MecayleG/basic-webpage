@@ -10,19 +10,19 @@
 html,
 body {
   height: 100%;
-  width: 100%;
+  width: 100%; 
   margin: 0;
   padding: 0;
   left: 0;
   top: 0;
   font-size: 100%;
-}
+} 
 
 /* ROOT FONT STYLES */
 
 * {
-  font-family: 'Lato', Helvetica, sans-serif;
-  color: #333447;
+  font-family: 'Merriweather', serif;
+  color: #33001a;
   line-height: 1.5;
 }
 
@@ -30,28 +30,16 @@ body {
 
 h1 {
   font-size: 2.5rem;
+  text-align: center;
 }
 
-/* h2 { 
+h2 {
   font-size: 2rem;
 }
 
 h3 {
   font-size: 1.375rem;
 }
-
-h4 {
-  font-size: 1.125rem;
-}
-
-h5 {
-  font-size: 1rem;
-}
-
-h6 {
-  font-size: 0.875rem;
-}
-
 p {
   font-size: 1.125rem;
   font-weight: 200;
@@ -68,7 +56,7 @@ p {
 
 .font-heavy {
   font-weight: 700;
- } */
+}
 
 /* POSITIONING */
 
@@ -93,9 +81,11 @@ p {
 /* ==== GRID SYSTEM ==== */
 
 .container {
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
+  border: 1px white dashed;
+  padding: 25px;
 }
 
 .row {
@@ -125,45 +115,52 @@ p {
 }
 
 .col-1-sm {
-  width: 15%;
+  width: 4.33%;
 }
 
 .col-2-sm {
-  width: 15%;
+  width: 12.66%;
 }
 
 .col-3-sm {
-  width: 15%;
+  width: 21%;
 }
 
 .col-4-sm {
-  width: 15%;
+  width: 29.33%;
 }
 
 .col-5-sm {
-  width: 15%;
+  width: 37.66%;
 }
 
 .col-6-sm {
-  width: 15%;
+  width: 46%;
 }
 
 .col-7-sm {
-  width: 15%;
+  width: 54.33%;
 }
 
 .col-8-sm {
-  width: 15%;
+  width: 62.66%;
 }
 
 .col-9-sm {
-  width: 15%;
+  width: 71%;
 }
 
 .col-10-sm {
-  width: 15%;
+  width: 79.33%;
 }
 
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
 
 .row::after {
 	content: "";
@@ -235,9 +232,63 @@ p {
   }
 }
 
-@media only screen and (min-width: 60em) { /* 960px */
+@media only screen and (min-width: 300px) { /* 960px */
   .container {
     width: 75%;
     max-width: 60rem;
   }
+  img {
+    width: 15rem;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+}
+
+
+img {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  margin: 15px;
+}
+/*Table Section*/
+table {
+  border-collapse: collapse;
+  width: 70%;
+  font-size: 1.2rem; 
+}
+th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {
+  background-color: #ffcce6
+;
+}
+th {
+  background-color: #ffcce6
+}
+ /* FLOATS */
+.floatright {
+  float: right;
+  
+}
+.floatleft {
+  float: left;
+  }
+  li {
+    font-size: 1.3rem;
+    list-style-type: circle;
+  }
+  .middle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  }
+.clearfix {
+  overflow: auto;
 }
